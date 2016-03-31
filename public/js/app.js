@@ -1,8 +1,9 @@
-angular.module('app', ['ngRoute', 'ngAnimate'])
+angular.module('app', ['ngRoute', 'ngAnimate', 'uiGmapgoogle-maps'])
     .config(routes)
     .controller('mainController', mainController)
-    .controller('hikingController', mainController)
-    .controller('bikingController', mainController)
-    .controller('mapController', mainController)
-    .controller('userController', mainController)
-    .service('hikeService', hikeService);
+    .controller('hikingController', hikingController)
+    .controller('bikingController', bikingController)
+    .controller('mapController', mapController)
+    .controller('userController', userController)
+    .service('hikeService', hikeService)
+    .service('mapService', mapService);

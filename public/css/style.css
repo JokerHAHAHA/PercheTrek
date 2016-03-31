@@ -26,16 +26,30 @@ html {
     max-width: 100%;
     max-height: 80%;
 }
-.main center h1 {
+h1 {
     font-family: StarTrek;
     color: #ffffff;
     font-size: 36pt;
     font-weight: bolder;
 }
-.main center h2 {
+h2 {
     font-family: StarTrek;
     color: #ffffff;
     font-size: 28pt;
+}
+.btn-green {
+    background-color: #27ae60;
+    color:#fff;
+}
+.btn-green:hover {
+    color:#fff;
+}
+.main .container {
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 66.66%;
 }
 .vertical {
     position: absolute;
@@ -72,4 +86,11 @@ html {
 }
 .vertical .glyphicon:hover, .horizontal .glyphicon:hover {
     color:pink;
+}
+.ng-enter {
+  transition:0.5s linear all;
+  opacity:0;
+}
+.ng-enter.ng-enter-active {
+  opacity:1;
 }
