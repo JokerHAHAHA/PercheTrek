@@ -229,7 +229,11 @@ h2 {
 .hike0, .bike0 {
     width: 100%;
     color: #ffffff;
-    font-size: 650%!important;
+    font-size: 336%!important;
+}
+.hike0 span, .bike0 span {
+    font-family: StarTrek!important;
+    padding-left: 2%;
 }
 .hike1, .bike1 {
     filter: grayscale(100%);
@@ -244,10 +248,8 @@ h2 {
     width: 14.4%;
 }
 .reward-hike {
-    margin-bottom: 2%;
-    border: 1px solid #ffffff;
+    margin-bottom: 10%;
 }
 .reward-bike {
-    margin-top: 2%;
-    border: 1px solid #ffffff;
+    margin-top: 10%;
 }
