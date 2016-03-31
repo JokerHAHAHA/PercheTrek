@@ -2,8 +2,8 @@ function hikingController($scope, $location, $http, hikeService, weatherService,
     $scope.switchView = function(direction) {
         $location.path('/'+direction);
     };
-    $scope.loadWeather = function(latitude, longitude, duration){
-		weatherService.loadWeather(latitude, longitude, duration);
-		$scope.weather = weatherFactory.weather[latitude.toString()+longitude.toString()+duration.toString()];
-	};
+    $scope.loadWeather = function(latitude, longitude, duration) {
+        weatherService.loadWeather(latitude, longitude, duration);
+        $scope.weather = weatherFactory.weather[latitude.toString() + longitude.toString() + duration.toString()];
+    };
 }
