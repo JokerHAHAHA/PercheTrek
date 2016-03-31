@@ -1,129 +1,129 @@
 @font-face {
-    font-family: StarTrek;
-    src: url('../fonts/Federation.ttf');
+	font-family: StarTrek;
+	src: url('../fonts/Federation.ttf');
 }
 html {
-    background-color: #27ae60;
-    background-image: url('../assets/TOILE.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-color: #27ae60;
+	background-image: url('../assets/TOILE.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .main {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 .main center {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    left: 50%;
-    max-width: 70%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	left: 50%;
+	max-width: 33.33%;
 }
 .main center img {
-    max-width: 100%;
-    max-height: 80%;
+	max-width: 100%;
+	max-height: 80%;
 }
 h1 {
-    font-family: StarTrek;
-    color: #ffffff;
-    font-size: 36pt;
-    font-weight: bolder;
+	font-family: StarTrek;
+	color: #ffffff;
+	font-size: 36pt;
+	font-weight: bolder;
 }
 h2 {
-    font-family: StarTrek;
-    color: #ffffff;
-    font-size: 28pt;
+	font-family: StarTrek;
+	color: #ffffff;
+	font-size: 28pt;
 }
 .btn-green {
-    background-color: #27ae60;
-    color: #fff;
+	background-color: #27ae60;
+	color: #fff;
 }
 .btn-green:hover {
-    color: #fff;
+	color: #fff;
 }
 .main .container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 66.66%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 66.66%;
 }
 .vertical {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 8vh;
-    color: #ffffff;
-    max-width: 33.33%;
-    text-shadow: #000000 1px 0 10px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 8vh;
+	color: #ffffff;
+	max-width: 33.33%;
+	text-shadow: #000000 1px 0 10px;
 }
 .vertical.right {
-    right: 0;
-    margin-right: 15px;
+	right: 0;
+	margin-right: 15px;
 }
 .vertical.left {
-    left: 0;
-    margin-left: 15px;
+	left: 0;
+	margin-left: 15px;
 }
 .horizontal {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 4vw;
-    color: #ffffff;
-    max-height: 33.33%;
-    text-shadow: #000000 1px 0 10px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 4vw;
+	color: #ffffff;
+	max-height: 33.33%;
+	text-shadow: #000000 1px 0 10px;
 }
 .horizontal.bottom {
-    bottom: 0;
+	bottom: 0;
 }
 .horizontal.top {
-    top: 0;
-    margin-top: 15px;
+	top: 0;
+	margin-top: 15px;
 }
 .vertical .glyphicon, .horizontal .glyphicon, .vertical .fa, .horizontal .fa {
-    cursor: pointer;
+	cursor: pointer;
 }
 .vertical .glyphicon:hover, .horizontal .glyphicon:hover, .vertical .fa:hover, .horizontal .fa:hover {
-    color: pink;
+	color: pink;
 }
 .smallerLogo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 30%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 30%;
 }
 .smallerLogo img {
-    max-width: 100%;
-    max-height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 .pop {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 }
 .ng-enter {
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
 }
 .ng-leave {
-    opacity: 0;
+	opacity: 0;
 }
 .ng-enter {
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    transform: scale(0);
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	transform: scale(0);
 }
 .ng-enter-active {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
 }
 .angular-google-map-container {
 	height: 400px;
@@ -155,12 +155,12 @@ h2 {
     color: #27ae60;
 }
 .hike0, .bike0 {
-    width: 100%;  
+    width: 100%;
     color: #ffffff;
-    font-size: 336%!important; 
+    font-size: 336%!important;
 }
 .hike0 span, .bike0 span {
-    font-family: StarTrek!important; 
+    font-family: StarTrek!important;
     padding-left: 2%;
 }
 .hike1, .bike1 {
@@ -183,4 +183,21 @@ h2 {
 }
 .msgErr {
     color: #FF0000;
+}
+.map {
+	background-color: rgba(0, 0, 0, 0.2);
+	color:white;
+	margin: 0;
+	padding: 20px;
+	border: solid 1px rgba(7, 255, 7, 0.77);
+}
+
+#scrolldiv {
+	height:300pt;
+	overflow-y:scroll;
+}
+.white {
+	color: white;
+	padding: 0px;
+	margin-top: 10px;
 }
