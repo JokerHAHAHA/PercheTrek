@@ -5,10 +5,42 @@
     <div class="horizontal top">
         <span class="glyphicon glyphicon-home" ng-click='switchView("")'></span>
     </div>
-    <center>
+    <ng-include src="'views/smallerLogo.html'"></ng-include>
+    <center class="user">
 
+        <div class="sign" ng-show="viewCount == 1">
+            <label>Votre e-mail</label>
+            <input type="email" class="mail form-control" placeholder="Entrez votre email ici">
+            <label>Votre mot de passe</label>
+            <input type="password" class="password form-control" placeholder="Mot de passe">
+            <button class="btn btn-white">C'est parti !</button>
+        </div>
 
+        <div class="profile" ng-show="viewCount == 2">
+            <h1>{{user.mail}}</h1>
+
+            <div class="reward-hike">
+                <i class="hike0 fa fa-street-view"></i>
+                <img class="img-circle hike1" src="assets/unicorn.jpg" />
+                <img class="img-circle hike2" src="assets/unicorn.jpg" />
+                <img class="img-circle hike3" src="assets/unicorn.jpg" />
+                <img class="img-circle hike4" src="assets/unicorn.jpg" />
+                <img class="img-circle hike5" src="assets/unicorn.jpg" />
+                <img class="img-circle hike6" src="assets/unicorn.jpg" />
+            </div>
+
+            <div class="reward-bike">
+                <i class="bike0 fa fa-bicycle"></i>
+                <img class="img-circle bike1" src="assets/unicorn.jpg" />
+                <img class="img-circle bike2" src="assets/unicorn.jpg" />
+                <img class="img-circle bike3" src="assets/unicorn.jpg" />
+                <img class="img-circle bike4" src="assets/unicorn.jpg" />
+                <img class="img-circle bike5" src="assets/unicorn.jpg" />
+                <img class="img-circle bike6" src="assets/unicorn.jpg" />
+            </div>
+        </div>
     </center>
+
     <div class="horizontal bottom">
         <span class="glyphicon glyphicon-map-marker" ng-click='switchView("map")'></span>
     </div>

@@ -20,7 +20,7 @@ html {
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
     left: 50%;
-    max-width: 33.33%;
+    max-width: 70%;
 }
 .main center img {
     max-width: 100%;
@@ -127,4 +127,54 @@ h2 {
 }
 .angular-google-map-container {
 	height: 400px;
+}
+.main .user label {
+    font-size: 180%;
+    font-family: StarTrek;
+    color: #ffffff;
+    margin-bottom: 3%;
+}
+.main .user {
+    width: 100%;
+}
+.mail, .password {
+    margin-bottom: 6%;
+    width: 35%;
+    height: 45px;
+}
+.main .user button {
+    font-family: StarTrek;
+    width: 35%;
+    height: 45px;
+    font-size: 140%;
+    font-weight: bold;
+}
+.btn-white {
+    background-color: #ffffff;
+    color: #27ae60;
+}
+.hike0, .bike0 {
+    width: 100%;  
+    color: #ffffff;
+    font-size: 650%!important;  
+}
+.hike1, .bike1 {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+.img-circle {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    margin: 1%;
+    width: 14.4%;
+}
+.reward-hike {
+    margin-bottom: 2%;
+    border: 1px solid #ffffff;
+}
+.reward-bike {
+    margin-top: 2%;
+    border: 1px solid #ffffff;
 }
