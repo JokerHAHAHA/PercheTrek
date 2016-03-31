@@ -1,8 +1,17 @@
 <div class="main">
+    <div class="vertical left">
+        <i class="fa fa-street-view" ng-click='switchView("hiking")'></i>
+    </div>
+    <div class="horizontal top">
+        <span class="glyphicon glyphicon-home" ng-click='switchView("")'></span>
+    </div>
     <center>
         <img src="assets/logo_light.png" alt="Perche Trek"/>
     </center>
     <div class="horizontal bottom">
-        <span class="glyphicon glyphicon-home" ng-click='switchView("")'></span>
+        <span class="glyphicon glyphicon-map-marker" ng-click='switchView("map")'></span>
+    </div>
+    <div class="vertical right">
+        <i class="fa fa-bicycle" ng-click='switchView("biking")'></i>
     </div>
 </div>

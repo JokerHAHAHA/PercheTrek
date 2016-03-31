@@ -81,18 +81,46 @@ h2 {
 .horizontal.top {
     top: 0;
 }
-.vertical .glyphicon, .horizontal .glyphicon {
+.vertical .glyphicon, .horizontal .glyphicon, .vertical .fa, .horizontal .fa {
     cursor: pointer;
 }
-.vertical .glyphicon:hover, .horizontal .glyphicon:hover {
+.vertical .glyphicon:hover, .horizontal .glyphicon:hover, .vertical .fa:hover, .horizontal .fa:hover {
     color:pink;
 }
-.ng-enter {
-  transition:0.5s linear all;
-  opacity:0;
+.smallerLogo {
+    position:absolute;
+    top:0;
+    left:0;
+    width:30%;
+    height:30%;
 }
-.ng-enter.ng-enter-active {
-  opacity:1;
+.smallerLogo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.pop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.pop.ng-enter {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.pop.ng-leave {
+    opacity: 0;
+}
+.pop.ng-enter {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.pop.ng-enter-active {
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .angular-google-map-container {
