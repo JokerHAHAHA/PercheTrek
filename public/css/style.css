@@ -67,3 +67,9 @@ html {
 .horizontal.top {
     top: 0;
 }
+.vertical .glyphicon, .horizontal .glyphicon {
+    cursor: pointer;
+}
+.vertical .glyphicon:hover, .horizontal .glyphicon:hover {
+    color:pink;
+}
