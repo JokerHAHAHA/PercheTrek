@@ -1,17 +1,17 @@
 // TODO SERVICE
-    function todoService($http) {
+    function hikeService($http) {
         return {
             get : function() {
-                return $http.get('/todos');
+                return $http.get('/hike');
             },
             update : function(id, data){
-                return $http.put('/todos/' + id, data);
+                return $http.put('/hike/' + id, data);
             },
             create : function(data) {
-                return $http.post('/todos', data);
+                return $http.post('/hike', data);
             },
             delete : function(id) {
-                return $http.delete('/todos/' + id);
+                return $http.delete('/hike/' + id);
             }
         }
     };

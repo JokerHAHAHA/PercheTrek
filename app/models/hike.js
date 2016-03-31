@@ -1,42 +1,42 @@
-// MODEL TODO
+// MODEL HIKE
     var mongoose = require('mongoose');
 
 
-    var todoSchema = new mongoose.Schema({
+    var hikeSchema = new mongoose.Schema({
     description: String
     });
 
-    var Todo = {
+    var Hike = {
 
-    model: mongoose.model('Todo', todoSchema),
+    model: mongoose.model('Hike', hikeSchema),
 
     create: function(req, res) {
-        Todo.model.create({
+        Hike.model.create({
             description: req.body.description
         }, function(){
             res.sendStatus(200);
-        })
+        });
     },
 
     findAll: function(req, res) {
-        Todo.model.find(function (err, data) {
+        Hike.model.find(function (err, data) {
             res.send(data);
         });
     },
 
     update: function(req, res){
-        Todo.model.findByIdAndUpdate(req.params.id, {
+        Hike.model.findByIdAndUpdate(req.params.id, {
             description: req.body.description
         }, function(){
             res.sendStatus(200);
-        })
+        });
     },
 
     delete: function(req, res){
-        Todo.model.findByIdAndRemove(req.params.id, function(){
+        Hike.model.findByIdAndRemove(req.params.id, function(){
             res.sendStatus(200);
-        })
+        });
     }
-    }
+};
 
-    module.exports = Todo;
+    module.exports = Hike;
