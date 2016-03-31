@@ -1,0 +1,5 @@
+function weatherFactory() {
+	return {
+		weather:{}
+	}
+}
