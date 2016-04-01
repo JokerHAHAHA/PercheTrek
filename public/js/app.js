@@ -11,6 +11,7 @@ angular.module('app', ['ngRoute', 'ngAnimate', 'uiGmapgoogle-maps'])
 	.service('userService', userService)
     .factory('weatherFactory', weatherFactory)
     .factory('userFactory', userFactory)
+    .factory('mapFactory', mapFactory)
 	.config(function(uiGmapGoogleMapApiProvider) {
 		uiGmapGoogleMapApiProvider.configure({
 			libraries: 'weather,geometry,visualization'

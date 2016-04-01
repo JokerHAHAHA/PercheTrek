@@ -216,6 +216,13 @@ h2 {
 .profile h1 {
 	margin-bottom: 5%;
 }
+.notauth {
+	position: absolute;
+	top: 15px;
+	right:15px;
+	max-width: 100%;
+	height: 5vh;
+}
 .containerUser {
 	width: 80%;
 	margin: auto;

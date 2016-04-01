@@ -9,7 +9,7 @@
 
 
 	<div class="container map" ng-show='toto == true'>
-		<h2>PARCOURS<small class="pull-right white">TOUR DE LA LOUPE - 10km - 120mn</small></h2>
+		<h2>PARCOURS{{type=='hike'?' RANDO':' CYCLO'}}<small class="pull-right white">{{parcours.name}} - {{parcours.length}} - {{parcours.duration}}</small></h2>
 		<div class="row">
 			<div class="col-md-8"><ui-gmap-google-map center='map.center' zoom='map.zoom'>
 				<ui-gmap-polyline ng-repeat="p in polylines" path="p.path"></ui-gmap-polyline>
@@ -35,7 +35,7 @@
 	</div>
 	<div class="container" ng-show='toto == false'>
 	<h1>VEUILLEZ CHOISIR UN PARCOURS...</h1>
-	
+
 	</div>
 	<div class="horizontal bottom">
 		<span class="glyphicon glyphicon-home" ng-click='switchView("")'></span>

@@ -5,6 +5,11 @@
     <div class="horizontal top">
         <span class="glyphicon glyphicon-user" ng-click='switchView("user")'></span>
     </div>
+    <div class="notauth" ng-hide='auth'>
+        <div class="alert alert-warning">
+            Pour bénéficier de tous nos supers services <a href="#/user">inscrivez vous</a> !
+        </div>
+    </div>
     <center>
         <img src="assets/logo_light.png" alt="Perche Trek"/>
     </center>

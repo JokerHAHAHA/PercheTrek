@@ -1,6 +1,13 @@
-function mapController($scope, $location, $http, hikeService, mapService, uiGmapGoogleMapApi, weatherService, weatherFactory) {
+function mapController($scope, $location, $http, hikeService, mapService, uiGmapGoogleMapApi, weatherService, weatherFactory, userFactory, mapFactory) {
     $scope.switchView = function(direction) {
         $location.path('/' + direction);
+    };
+    $scope.toto = (mapFactory.currentTrek !== '');
+    $scope.type = mapFactory.type;
+    $scope.parcours = {
+        name: "Le tour de la Loupe",
+        length: "15km",
+        duration: "1h"
     };
     $scope.map = {
         center: {
@@ -32,5 +39,4 @@ function mapController($scope, $location, $http, hikeService, mapService, uiGmap
         weatherService.loadWeather(latitude, longitude, duration);
         $scope.weather = weatherFactory.weather[latitude.toString() + longitude.toString() + duration.toString()];
     };
-	$scope.toto = true;
 }

@@ -16,7 +16,7 @@
                         <h3 class="text-center">Le tour de la Loupe</h3>
                         <p class="text-center">15km - 2h30 - Beau temps</p>
                         <p>
-                            <a ng-click='switchView("map")' class="btn btn-green btn-block">
+                            <a ng-click='setTrek(0)' class="btn btn-green btn-block">
                                 <span class="glyphicon glyphicon-play"></span>&nbsp;Consulter ce parcours</a>
                         </p>
                     </div>
@@ -29,7 +29,7 @@
                         <h3 class="text-center">La découverte de Trouperdu</h3>
                         <p class="text-center">5km - 1h - Pluvieux</p>
                         <p>
-                            <a ng-click='switchView("map")' class="btn btn-green btn-block">
+                            <a ng-click='setTrek(1)' class="btn btn-green btn-block">
                                 <span class="glyphicon glyphicon-play"></span>&nbsp;Consulter ce parcours</a>
                         </p>
                     </div>
@@ -42,7 +42,7 @@
                         <h3 class="text-center">Le mont Tagne</h3>
                         <p class="text-center">60km - 10h - Nuageux</p>
                         <p>
-                            <a ng-click='switchView("map")' class="btn btn-green btn-block">
+                            <a ng-click='setTrek(2)' class="btn btn-green btn-block">
                                 <span class="glyphicon glyphicon-play"></span>&nbsp;Consulter ce parcours</a>
                         </p>
                     </div>
@@ -55,7 +55,7 @@
                         <h3 class="text-center">La grotte sombre</h3>
                         <p class="text-center">2km - 30mn - Beau temps</p>
                         <p>
-                            <a ng-click='switchView("map")' class="btn btn-green btn-block">
+                            <a ng-click='setTrek(3)' class="btn btn-green btn-block">
                                 <span class="glyphicon glyphicon-play"></span>&nbsp;Consulter ce parcours</a>
                         </p>
                     </div>
@@ -68,7 +68,7 @@
                         <h3 class="text-center">Shopping à Chartres</h3>
                         <p class="text-center">30km - 5h - Beau temps - 150 €</p>
                         <p>
-                            <a ng-click='switchView("map")' class="btn btn-green btn-block">
+                            <a ng-click='setTrek(4)' class="btn btn-green btn-block">
                                 <span class="glyphicon glyphicon-play"></span>&nbsp;Consulter ce parcours</a>
                         </p>
                     </div>
@@ -81,7 +81,7 @@
                         <h3 class="text-center">McDo de Nogent</h3>
                         <p class="text-center">200m - 10mn - Gras</p>
                         <p>
-                            <a ng-click='switchView("map")' class="btn btn-green btn-block">
+                            <a ng-click='setTrek(5)' class="btn btn-green btn-block">
                                 <span class="glyphicon glyphicon-play"></span>&nbsp;Consulter ce parcours</a>
                         </p>
                     </div>
@@ -90,7 +90,7 @@
         </div>
     </div>
     <div class="horizontal bottom">
-        <span class="glyphicon glyphicon-map-marker" ng-click='switchView("map")'></span>
+        <span class="glyphicon glyphicon-map-marker" ng-click='setTrek(0)'></span>
     </div>
     <div class="vertical right">
         <i class="fa fa-bicycle" ng-click='switchView("biking")'></i>
