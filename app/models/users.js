@@ -16,7 +16,10 @@ var usersSchema = new mongoose.Schema({
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Email invalide']
     },
     password: String,
-    badges: [String]
+    badges: {
+        hike: [String],
+        bike: [String]
+    }
 });
 
 var Users = {
@@ -32,9 +35,9 @@ var Users = {
                 Users.model.findOne({email:req.body.email,password:req.body.password},function(err, data) {
                     if(!err) {
                         if(!data) {
-                            res.sendStatus(401);
+                            res.send({message:"Wrong password"}); //mdp
                         } else {
-                            res.send(data);
+                            res.send(data);  //ok
                         }
                     } else {
                         res.sendStatus(500);
@@ -42,14 +45,14 @@ var Users = {
                 });
             } else {
                 if(!err.code) {
-                    res.send(err);
+                    res.send(err); //email invalid
                 } else {
                     Users.model.findOne({email:req.body.email,password:req.body.password},function(err, data) {
                         if(!err) {
                             if(!data) {
-                                res.sendStatus(401);
+                                res.send({message:"Wrong password"}); //mdp
                             } else {
-                                res.send(data);
+                                res.send(data); //ok
                             }
                         } else {
                             res.sendStatus(500);

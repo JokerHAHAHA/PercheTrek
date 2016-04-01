@@ -10,33 +10,37 @@
 
         <div class="sign" ng-show="viewCount == 1">
             <label>Votre e-mail</label>
-            <input type="email" class="mail form-control" placeholder="Entrez votre email ici">
+            <input type="email" class="mail form-control" placeholder="Entrez votre email ici" ng-model="data.email">
+            <p class="msgErr" ng-show="mailOk == 1">E-mail non valide</p>
+            <p class="msgErr" ng-show="mailOk != 1">&nbsp;</p>
             <label>Votre mot de passe</label>
-            <input type="password" class="password form-control" placeholder="Mot de passe">
-            <button class="btn btn-white">C'est parti !</button>
+            <input type="password" class="password form-control" placeholder="Mot de passe" ng-model="data.password">
+            <p class="msgErr" ng-show="passwordOk == 1">Mot de passe non valide</p>
+            <p class="msgErr" ng-show="passwordOk != 1">&nbsp;</p>
+            <button class="btn btn-white" ng-click="add()">C'est parti !</button>
         </div>
 
         <div class="profile" ng-show="viewCount == 2">
-            <h1>{{user.mail}}</h1>
+            <h1>{{user.email}}</h1>
 
             <div class="reward-hike">
                 <i class="hike0 fa fa-street-view"><span>Vos realisations a pieds</span></i>
-                <img class="img-circle hike1" src="assets/unicorn.jpg" />
-                <img class="img-circle hike2" src="assets/unicorn.jpg" />
-                <img class="img-circle hike3" src="assets/unicorn.jpg" />
-                <img class="img-circle hike4" src="assets/unicorn.jpg" />
-                <img class="img-circle hike5" src="assets/unicorn.jpg" />
-                <img class="img-circle hike6" src="assets/unicorn.jpg" />
+                <img class="img-circle hike1" src="assets/unicorn.png" />
+                <img class="img-circle hike2" src="assets/unicorn.png" />
+                <img class="img-circle hike3" src="assets/unicorn.png" />
+                <img class="img-circle hike4" src="assets/unicorn.png" />
+                <img class="img-circle hike5" src="assets/unicorn.png" />
+                <img class="img-circle hike6" src="assets/unicorn.png" />
             </div>
 
             <div class="reward-bike">
                 <i class="bike0 fa fa-bicycle"><span>Vos realisations a vélo</span></i>
-                <img class="img-circle bike1" src="assets/unicorn.jpg" />
-                <img class="img-circle bike2" src="assets/unicorn.jpg" />
-                <img class="img-circle bike3" src="assets/unicorn.jpg" />
-                <img class="img-circle bike4" src="assets/unicorn.jpg" />
-                <img class="img-circle bike5" src="assets/unicorn.jpg" />
-                <img class="img-circle bike6" src="assets/unicorn.jpg" />
+                <img class="img-circle bike1" src="assets/unicorn.png" />
+                <img class="img-circle bike2" src="assets/unicorn.png" />
+                <img class="img-circle bike3" src="assets/unicorn.png" />
+                <img class="img-circle bike4" src="assets/unicorn.png" />
+                <img class="img-circle bike5" src="assets/unicorn.png" />
+                <img class="img-circle bike6" src="assets/unicorn.png" />
             </div>
         </div>
     </center>

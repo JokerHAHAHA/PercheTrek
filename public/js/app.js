@@ -7,8 +7,10 @@ angular.module('app', ['ngRoute', 'ngAnimate', 'uiGmapgoogle-maps'])
 	.controller('userController', userController)
 	.service('hikeService', hikeService)
     .service('weatherService', weatherService)
-    .factory('weatherFactory', weatherFactory)
 	.service('mapService', mapService)
+	.service('userService', userService)
+    .factory('weatherFactory', weatherFactory)
+    .factory('userFactory', userFactory)
 	.config(function(uiGmapGoogleMapApiProvider) {
 		uiGmapGoogleMapApiProvider.configure({
 			libraries: 'weather,geometry,visualization'

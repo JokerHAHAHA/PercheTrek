@@ -132,13 +132,13 @@ h2 {
     font-size: 180%;
     font-family: StarTrek;
     color: #ffffff;
+    margin-top: 6%;
     margin-bottom: 3%;
 }
 .main .user {
     width: 100%;
 }
 .mail, .password {
-    margin-bottom: 6%;
     width: 35%;
     height: 45px;
 }
@@ -148,6 +148,7 @@ h2 {
     height: 45px;
     font-size: 140%;
     font-weight: bold;
+    margin-top: 10%;
 }
 .btn-white {
     background-color: #ffffff;
@@ -179,4 +180,7 @@ h2 {
 }
 .reward-bike {
     margin-top: 10%;
+}
+.msgErr {
+    color: #FF0000;
 }
