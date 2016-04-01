@@ -32,5 +32,5 @@ function mapController($scope, $location, $http, hikeService, mapService, uiGmap
         weatherService.loadWeather(latitude, longitude, duration);
         $scope.weather = weatherFactory.weather[latitude.toString() + longitude.toString() + duration.toString()];
     };
-	$scope.toto = false;
+	$scope.toto = true;
 }
