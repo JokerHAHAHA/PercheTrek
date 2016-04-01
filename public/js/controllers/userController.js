@@ -12,6 +12,7 @@ function userController($scope, $location, $http, hikeService, userService, user
 		$scope.viewCount = 1;
 		userFactory.currentUser = {};
 		userFactory.isLogged = false;
+		$scope.data = {}
 	}
 
 	$scope.add = function() {

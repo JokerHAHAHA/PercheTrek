@@ -5,8 +5,9 @@
     <div class="horizontal top">
         <span class="glyphicon glyphicon-home" ng-click='switchView("")'></span>
     </div>
+
     <ng-include src="'views/smallerLogo.html'"></ng-include>
-    <center class="user">
+    <div class="containerUser user">
 
         <div class="sign" ng-show="viewCount == 1">
             <label>Votre e-mail</label>
@@ -21,29 +22,32 @@
         </div>
 
         <div class="profile" ng-show="viewCount == 2">
+            <div class="top-right">
+                <span class="glyphicon glyphicon-log-out" ng-click='logOut()'></span>
+            </div>
             <h1>{{user.email}}</h1>
 
             <div class="reward-hike">
                 <i class="hike0 fa fa-street-view"><span>Vos realisations a pieds</span></i>
-                <img class="img-circle hike1" src="assets/unicorn.png" />
-                <img class="img-circle hike2" src="assets/unicorn.png" />
-                <img class="img-circle hike3" src="assets/unicorn.png" />
-                <img class="img-circle hike4" src="assets/unicorn.png" />
-                <img class="img-circle hike5" src="assets/unicorn.png" />
-                <img class="img-circle hike6" src="assets/unicorn.png" />
+                <img class="img-circle" src="assets/unicorn.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
             </div>
 
             <div class="reward-bike">
-                <i class="bike0 fa fa-bicycle"><span>Vos realisations a vélo</span></i>
-                <img class="img-circle bike1" src="assets/unicorn.png" />
-                <img class="img-circle bike2" src="assets/unicorn.png" />
-                <img class="img-circle bike3" src="assets/unicorn.png" />
-                <img class="img-circle bike4" src="assets/unicorn.png" />
-                <img class="img-circle bike5" src="assets/unicorn.png" />
-                <img class="img-circle bike6" src="assets/unicorn.png" />
+                <i class="bike0 fa fa-bicycle"><span>Vos realisations a velo</span></i>
+                <img class="img-circle" src="assets/unicorn.png" />
+                <img class="img-circle" src="assets/unicorn.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
+                <img class="img-circle" src="assets/unicorn_disabled.png" />
             </div>
         </div>
-    </center>
+    </div>
 
     <div class="horizontal bottom">
         <span class="glyphicon glyphicon-map-marker" ng-click='switchView("map")'></span>
