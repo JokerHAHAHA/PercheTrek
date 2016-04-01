@@ -1,46 +1,46 @@
 <div class="main">
-	<div class="vertical left">
-		<i class="fa fa-street-view" ng-click='switchView("hiking")'></i>
-	</div>
-	<div class="horizontal top">
-		<span class="glyphicon glyphicon-user" ng-click='switchView("user")'></span>
-	</div>
-	<ng-include src="'views/smallerLogo.html'"></ng-include>
+    <div class="vertical left">
+        <i class="fa fa-street-view" ng-click='switchView("hiking")'></i>
+    </div>
+    <div class="horizontal top">
+        <span class="glyphicon glyphicon-user" ng-click='switchView("user")'></span>
+    </div>
+    <ng-include src="'views/smallerLogo.html'"></ng-include>
 
+    <div class="container map" ng-show='toto == true'>
+        <h2>PARCOURS{{type=='hike'?' RANDO':' CYCLO'}}
+            <small class="pull-right white">{{parcours.name}}
+                -
+                {{type=='bike'?((parcours.length/1000)+"km"):(parcours.length+"m")}}
+                -
+                {{type=='bike'?((parcours.duration/3600)+"h"):((parcours.duration/60)+"mn")}}</small>
+        </h2>
+        <div class="row">
+            <div class="col-md-8">
+                <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+                    <ui-gmap-polyline ng-repeat="p in polylines" path="p.path"></ui-gmap-polyline>
+                </ui-gmap-google-map>
+            </div>
+            <div class="col-md-4" id="scrolldiv">
+                <p ng-repeat='geo in parcours.geos'>{{$index+1}}
+                    -
+                    {{geo.name}}
+                    <span class='pull-right'>{{(geo.duration+'s')}}</span><br/><img ng-src="{{loadWeather(geo.latitude,geo.longitude,geo.duration).imSrc}}"/>
+                    {{loadWeather(geo.latitude,geo.longitude,geo.duration).tempMin+"°C"}}
+                    <span class='pull-right'>{{(geo.length+'m')}}</span>
+                </p>
+                <button type="button" class="btn btn-green btn-block" ng-click="">FINI</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" ng-show='toto == false'>
+        <h1>VEUILLEZ CHOISIR UN PARCOURS...</h1>
 
-	<div class="container map" ng-show='toto == true'>
-		<h2>PARCOURS{{type=='hike'?' RANDO':' CYCLO'}}<small class="pull-right white">{{parcours.name}} - {{parcours.length}} - {{parcours.duration}}</small></h2>
-		<div class="row">
-			<div class="col-md-8"><ui-gmap-google-map center='map.center' zoom='map.zoom'>
-				<ui-gmap-polyline ng-repeat="p in polylines" path="p.path"></ui-gmap-polyline>
-				</ui-gmap-google-map>
-			</div>
-			<div class="col-md-4" id="scrolldiv">
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<p>1 - La loupe<span class='pull-right'>15h</span><br />15° Soleil<span class='pull-right'>200m</span></p>
-				<button type="button" class="btn btn-green btn-block" ng-click="">FINI</button>
-			</div>
-		</div>
-	</div>
-	<div class="container" ng-show='toto == false'>
-	<h1>VEUILLEZ CHOISIR UN PARCOURS...</h1>
-
-	</div>
-	<div class="horizontal bottom">
-		<span class="glyphicon glyphicon-home" ng-click='switchView("")'></span>
-	</div>
-	<div class="vertical right">
-		<i class="fa fa-bicycle" ng-click='switchView("biking")'></i>
-	</div>
+    </div>
+    <div class="horizontal bottom">
+        <span class="glyphicon glyphicon-home" ng-click='switchView("")'></span>
+    </div>
+    <div class="vertical right">
+        <i class="fa fa-bicycle" ng-click='switchView("biking")'></i>
+    </div>
 </div>
