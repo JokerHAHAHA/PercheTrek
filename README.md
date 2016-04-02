@@ -1,7 +1,12 @@
 # Perche Trek
 
-Application développé dans le cadre d'un Hackaton (24h) à la Wild Code School
+Application developped during a 24h Hackathon at the Wild Code School
+
+# Description
+
+It is for users who look for hike and bike circuits in the area of Le Perche, France.
+
 
 ## Collabs
 
-@jeromebar @joker_hahaha @jbpasquier
+@jeromebar @jbpasquier @jokerhahaha
