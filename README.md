@@ -1,6 +1,6 @@
 # Perche Trek
 
-Application developped during a 24h Hackathon at the Wild Code School
+Application developped during a 24h Hackathon at the [Wild Code School](wildcodeschool.fr)
 
 ## Description
 
