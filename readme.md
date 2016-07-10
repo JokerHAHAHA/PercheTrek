@@ -14,7 +14,7 @@ It is for users who look for hike and bike circuits in the area of Le Perche, Fr
 
 [Install NodeJS](https://nodejs.org/en/download/package-manager/)
 
-Create perche-trek/config/database.js
+Create perche-trek/config/database.js coping perche-trek/config/database.js.sample
 
 $ npm install
 
